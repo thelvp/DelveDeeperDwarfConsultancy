@@ -7,18 +7,121 @@
 }
 
 body {
-  background-color: rgb(62, 73, 122);
+  background-color: #21325E;
+  /* width: 90%; */
+  margin: 0 auto; 
+  text-align: left;
+}
+
+.container {
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  background-color: #F0F0F0;
+  margin: 1rem 1rem;
+  padding: 1rem; 
+  width: 90%;
+  border-radius: 10px;
+  border: 1px solid  #21325E;
+  line-height: 1.6; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-wrap: wrap; 
+  flex-direction: row; 
+  padding: 1rem; 
+  margin: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #F1D00A;
+  text-align: center;
 }
 
 .navbar li {
-   display: inline;
+  display: inline; 
 }
 
 .navbar a {
-  background-color: #21325E;
+  text-decoration: none;
+  background-color:#F0F0F0; 
+  padding: 10px 20px;
+  margin: 10px;
+  color: #21325E;
+  border-radius: 5px;
 }
 
 .navbar a:hover {
-  background-color: #F1D00A;
+  background-color: #21325E;
+  color: #F0F0F0;
+  box-shadow: 3px 3px #F0F0F0;
 }
 
+.header {
+  flex-wrap: wrap; 
+  flex-direction: row; 
+  text-align: center;
+
+  h1 {
+    font-weight: bold;
+  }
+}
+
+.header img {
+  width: 100px;
+  height: 100px;
+  float: left; 
+  border-radius: 50%; 
+}
+
+#welcometext {
+
+}
+
+#slogan {
+
+}
+
+.mission {
+
+}
+
+.picgallery {
+
+}
+
+.picgallery .pics {
+
+}
+
+.picgallery img {
+  height: 200px;
+  width: auto; 
+  margin: 5px;
+}
+
+.team {
+
+}
+
+.profile {
+  background-color: #e3e3e3;
+  border: 1px solid #e3e3e3; 
+  border-radius: 5px;
+}
+
+.profilepic {
+  border-radius: 50%; 
+  height: 200px;
+  width: 200px; 
+}
+
+.contact {
+
+}
+
+.footer {
+
+}
