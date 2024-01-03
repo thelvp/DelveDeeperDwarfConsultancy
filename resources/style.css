@@ -1,1 +1,24 @@
+/*color pallette https://colorhunt.co/palette/21325e3e497af1d00af0f0f0*/
+
+* { 					
+	margin: 0; 			
+	padding: 0;
+	box-sizing: border-box;	 
+}
+
+body {
+  background-color: rgb(62, 73, 122);
+}
+
+.navbar li {
+   display: inline;
+}
+
+.navbar a {
+  background-color: #21325E;
+}
+
+.navbar a:hover {
+  background-color: #F1D00A;
+}
 
