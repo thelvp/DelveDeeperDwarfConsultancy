@@ -8,35 +8,34 @@
 
 body {
   background-color: #21325E;
-  /* width: 90%; */
   margin: 0 auto; 
   text-align: left;
 }
 
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+
 .container {
   display: flex; 
-  justify-content: center;
-  align-items: center; 
-  background-color: #F0F0F0;
-  margin: 1rem 1rem;
+  background-color: rgba(240, 240, 240, 0.6);
+  margin: 1rem 0;
   padding: 1rem; 
-  width: 90%;
   border-radius: 10px;
   border: 1px solid  #21325E;
   line-height: 1.6; 
 }
 
-.navbar {
+.navbar, footer {
   display: flex;
   justify-content: center;
   align-items: center; 
-  flex-wrap: wrap; 
-  flex-direction: row; 
-  padding: 1rem; 
-  margin: 1rem;
+  flex-flow: row wrap; 
+  padding: 2rem; 
   width: 100%;
   margin: 0 auto;
-  background-color: #F1D00A;
+  background-color: rgba(241, 208, 10, 1);
   text-align: center;
 }
 
@@ -46,76 +45,94 @@ body {
 
 .navbar a {
   text-decoration: none;
-  background-color:#F0F0F0; 
-  padding: 10px 20px;
-  margin: 10px;
+  background-color:none; 
+  padding: 0.5rem;
+  margin: 0.5rem;
   color: #21325E;
   border-radius: 5px;
 }
 
 .navbar a:hover {
-  background-color: #21325E;
+  background-color: rgba(33, 50, 94, 0.9);
   color: #F0F0F0;
-  box-shadow: 3px 3px #F0F0F0;
 }
 
 .header {
-  flex-wrap: wrap; 
-  flex-direction: row; 
+  justify-content: center;
+  align-items: center; 
+  flex-flow: row nowrap; 
   text-align: center;
 
+  img {
+    width: 100px;
+    height: 100px;
+    float: left; 
+    border-radius: 50%; 
+    margin: 20px 40px 20px 20px;
+    filter: drop-shadow(0.1rem 0.1rem 0.5rem #F0F0F0);
+  }
+
   h1 {
-    font-weight: bold;
+    font-weight: 700;
   }
 }
 
-.header img {
-  width: 100px;
-  height: 100px;
-  float: left; 
-  border-radius: 50%; 
-}
-
-#welcometext {
-
-}
-
-#slogan {
-
-}
-
 .mission {
-
+  justify-content: left;
+  align-items: center; 
+  flex-flow: row wrap; 
+  text-align: left;
 }
 
 .picgallery {
+  align-items: flex-start; 
+  justify-content: center;
+  flex-flow: row nowrap; 
 
-}
+  .text {
+    text-align: left;
+    /* align-items: center; 
+    flex-flow: row wrap;  */
+  }
 
-.picgallery .pics {
+  .pics {
+  /* display: flex; 
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap; */
+  }
 
-}
+  img {
+  height: 15rem;
+  width: 15rem; 
+  margin: 0.5rem;
+  border-radius: 2%; 
+  object-fit: cover;
+  }
 
-.picgallery img {
-  height: 200px;
-  width: auto; 
-  margin: 5px;
 }
 
 .team {
-
+  justify-content: center;
+  align-items: center; 
+  flex-flow: row wrap; 
 }
 
-.profile {
-  background-color: #e3e3e3;
-  border: 1px solid #e3e3e3; 
-  border-radius: 5px;
-}
+.teammembers {
 
-.profilepic {
-  border-radius: 50%; 
-  height: 200px;
-  width: 200px; 
+  .profile {
+    background-color: rgb(227, 227, 227, 0.6);
+    border-radius: 3%;
+    height: 100%; 
+    width: 50%;
+  }
+
+  .profilepic {
+    border-radius: 50%; 
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;  
+  }
 }
 
 .contact {
