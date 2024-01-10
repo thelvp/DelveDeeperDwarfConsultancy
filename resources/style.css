@@ -182,11 +182,81 @@ main {
   }
 
   a {
-    text-decoration: underline;
     color: black;
+    background-color: rgba(241, 208, 10, 1);
+    padding: 0.5rem; 
+    border: 1x solid rgba(241,208,10,1);
+    border-radius: 6px; 
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: rgba(241, 208, 10, 1);
+    background-color: rgba(33, 50, 94, 0.9);
+    color: #F0F0F0;
   }
 }
 
 .footer {
   font-size: small;
+}
+
+/* media query for mobile phones */
+
+@media only screen and (max-width:400px) {
+
+  main {
+    width: 100%;
+  }
+
+  .header {
+    flex-flow: column nowrap; 
+  }
+
+  .picgallery img {
+    height: 10rem;
+    width: 10rem; 
+    margin: 0.25rem;
+  }
+
+  .piccontainer {
+    width: 100%;
+    flex-flow: row wrap; 
+    justify-content: center;
+  }
+
+  .team {
+
+      .teammembers {
+      display: flex; 
+      flex-flow: row wrap; 
+      justify-content: center;
+      align-content: baseline;
+      }
+
+      .profile {
+      flex-flow: column wrap;
+      justify-content: center;
+      align-content: center; 
+      align-items: center;
+      width: 100%;
+      height: auto;
+      margin: 0 1rem;
+      padding: 0.2rem;
+      }
+
+      .profilepic {
+        border-radius: 50%; 
+        height: 4rem;
+        width: 4rem;
+        margin-bottom: 0.5rem;
+      }
+
+    .contact {
+      display: flex; 
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
