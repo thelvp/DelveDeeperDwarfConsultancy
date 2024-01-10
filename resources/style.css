@@ -1,5 +1,7 @@
 /*color pallette https://colorhunt.co/palette/21325e3e497af1d00af0f0f0*/
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Stick+No+Bills:wght@400;500;700&display=swap');
+
 * { 					
 	margin: 0; 			
 	padding: 0;
@@ -10,15 +12,24 @@ body {
   background-color: #21325E;
   margin: 0 auto; 
   text-align: left;
+  
+  p {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: lighter;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Stick No Bills', 'Arial', sans-serif;
+  }
+
 }
 
 main {
-    width: 70%;
-    margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
 }
 
-.container {
-  display: flex; 
+.card {
   background-color: rgba(240, 240, 240, 0.6);
   margin: 1rem 0;
   padding: 1rem; 
@@ -28,11 +39,11 @@ main {
 }
 
 .navbar, footer {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
+  display: flex; 
   flex-flow: row wrap; 
-  padding: 2rem; 
+  justify-content: center;
+  align-content: center;
+  padding: 1rem 0; 
   width: 100%;
   margin: 0 auto;
   background-color: rgba(241, 208, 10, 1);
@@ -46,10 +57,13 @@ main {
 .navbar a {
   text-decoration: none;
   background-color:none; 
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
   margin: 0.5rem;
   color: #21325E;
   border-radius: 5px;
+  font-family: 'Stick No Bills', 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: larger;
 }
 
 .navbar a:hover {
@@ -58,15 +72,16 @@ main {
 }
 
 .header {
-  justify-content: center;
-  align-items: center; 
+  display: flex; 
   flex-flow: row nowrap; 
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
 
   img {
     width: 100px;
     height: 100px;
-    float: left; 
+    order: 1;
     border-radius: 50%; 
     margin: 20px 40px 20px 20px;
     filter: drop-shadow(0.1rem 0.1rem 0.5rem #F0F0F0);
@@ -78,28 +93,30 @@ main {
 }
 
 .mission {
-  justify-content: left;
-  align-items: center; 
-  flex-flow: row wrap; 
-  text-align: left;
+  display: flex; 
+  flex-flow: column wrap; 
+  align-items: center;
+  justify-content: center;
+
+  h2, p {
+  text-align: center;
+  }
 }
 
 .picgallery {
-  align-items: flex-start; 
+  display: flex; 
+  flex-flow: column wrap; 
   justify-content: center;
-  flex-flow: row nowrap; 
 
   .text {
-    text-align: left;
-    /* align-items: center; 
-    flex-flow: row wrap;  */
+  text-align: center;
   }
 
-  .pics {
-  /* display: flex; 
-  justify-content: center;
-  align-content: center;
-  flex-flow: row wrap; */
+  .piccontainer {
+  width: 100%;
+  display: flex; 
+  flex-flow: row wrap; 
+  justify-content: space-around;
   }
 
   img {
@@ -113,32 +130,63 @@ main {
 }
 
 .team {
-  justify-content: center;
-  align-items: center; 
-  flex-flow: row wrap; 
-}
+  display: flex; 
+  flex-flow: column wrap; 
+  text-align: center;
+} 
 
-.teammembers {
+  .teammembers {
+  display: flex; 
+  flex-flow: row wrap; 
+  justify-content: center;
+  align-content: baseline;
+  }
 
   .profile {
-    background-color: rgb(227, 227, 227, 0.6);
-    border-radius: 3%;
-    height: 100%; 
-    width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: baseline; 
+  border-radius: 3%;
+  height: auto; 
+  width: 40%;
+  margin: 0 2rem;
+  padding: 0.5rem;
+  }
+
+  .team.text {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .profilepic {
     border-radius: 50%; 
-    height: 10rem;
-    width: 10rem;
-    object-fit: cover;  
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover; 
+    order: 0; 
+    margin-bottom: 1rem;
+    filter: drop-shadow(0.1rem 0.1rem 0.5rem #F0F0F0);
+  }
+
+.contact {
+  display: flex; 
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    margin-right: 2rem;
+  }
+
+  a {
+    text-decoration: underline;
+    color: black;
   }
 }
 
-.contact {
-
-}
-
 .footer {
-
+  font-size: small;
 }
